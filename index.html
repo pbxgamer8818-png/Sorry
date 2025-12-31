@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>I'm Sorry My Love 🥺❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:cursive;
+}
+
+/* COMMON SECTION STYLE */
+section{
+  min-height:100vh;
+  padding:40px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:white;
+  color:#ff2f6d;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* PAGE 1 */
+#page1{
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  color:white;
+}
+.box{
+  background:rgba(255,255,255,0.15);
+  padding:30px;
+  border-radius:25px;
+}
+
+/* PAGE 2 */
+#page2{
+  background:linear-gradient(#ff9a9e,#fad0c4);
+  color:#b30059;
+}
+
+/* PAGE 3 KISSES */
+#page3{
+  background:#ffdde1;
+  overflow:hidden;
+}
+.kiss{
+  position:absolute;
+  font-size:30px;
+  animation:float 6s infinite;
+}
+@keyframes float{
+  0%{transform:translateY(100vh);opacity:0;}
+  50%{opacity:1;}
+  100%{transform:translateY(-10vh);opacity:0;}
+}
+
+/* PAGE 4 */
+#page4{
+  background:linear-gradient(#fbc2eb,#a6c1ee);
+}
+
+/* PAGE 5 */
+#page5{
+  background:linear-gradient(#ff758c,#ff7eb3);
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section id="page1">
+  <div class="box">
+    <h1>I'm Really Sorry My Love 🥺❤️</h1>
+    <p>
+      I know I made a mistake…  
+      Please forgive me 😭💔  
+      I can’t imagine my life without you.
+    </p>
+    <a href="#page2" class="btn">Next ➝</a>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2">
+  <div class="box">
+    <h1>You Are My Everything 💖</h1>
+    <p>
+      You are my happiness,  
+      my comfort, my heartbeat 🥺  
+      Loving you is the best thing I ever did ❤️
+    </p>
+    <a href="#page3" class="btn">Kisses For You 💋</a>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3">
+  <div>
+    <h1>Unlimited Kisses For You 💋💋💋</h1>
+    <p>I hope every kiss heals your heart ❤️</p>
+    <a href="#page4" class="btn">More Love ➝</a>
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section id="page4">
+  <div class="box">
+    <h1>Our Beautiful Journey 💞</h1>
+    <p>
+      Every smile, every fight, every memory…  
+      I want all of it only with YOU 🥺  
+      Please don’t give up on us 💔
+    </p>
+    <a href="#page5" class="btn">My Promise ❤️</a>
+  </div>
+</section>
+
+<!-- PAGE 5 -->
+<section id="page5">
+  <div class="box">
+    <h1>I Promise You 🥺💍</h1>
+    <p>
+      I’ll understand you more.  
+      I’ll love you better.  
+      I’ll never hurt you again ❤️  
+      Please forgive me, my love 💖
+    </p>
+  </div>
+</section>
+
+<script>
+for(let i=0;i<50;i++){
+  let kiss=document.createElement("div");
+  kiss.className="kiss";
+  kiss.innerHTML="💋";
+  kiss.style.left=Math.random()*100+"vw";
+  kiss.style.animationDuration=(3+Math.random()*5)+"s";
+  document.getElementById("page3").appendChild(kiss);
+}
+</script>
+
+</body>
+</html>
